@@ -1,0 +1,21 @@
+{
+  "logo": "logo_1717145678.png",
+  "nav_links": [
+    {
+      "name": "Home",
+      "url": "/index.php"
+    },
+    {
+      "name": "About",
+      "url": "/about.php"
+    },
+    {
+      "name": "Services",
+      "url": "/services.php"
+    },
+    {
+      "name": "Contact",
+      "url": "/contact.php"
+    }
+  ]
+}

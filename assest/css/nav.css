@@ -1,0 +1,263 @@
+.shopify-header {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.shopify-header-text {
+  border-bottom: 2px solid #f8e8e8;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  color: rgba(18, 18, 18, 0.75);
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  padding: 0;
+}
+
+/* Brand Logo Size */
+.brand-logo {
+  height: 50px;
+  max-height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+
+.navbar-nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+.shopify-navbar-item {
+  display: flex;
+  justify-content: center;
+  align-items: center !important;
+}
+
+.navbar-toggler {
+  border: none;
+  background: transparent;
+}
+
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml,...');
+  /* Bootstrap's default icon */
+}
+
+
+.search-box {
+  display: none;
+  position: relative;
+  width: 250px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 8px 35px 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.search-inside-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+  pointer-events: none;
+}
+
+.shopify-navbar-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.shopify-navbar-icons a {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+
+
+.search-box {
+  position: relative;
+  width: 200px;
+}
+
+.search-inside-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+  pointer-events: none;
+}
+
+
+.nav-item {
+  margin-right: 10px;
+  font-size: 22px !important;
+}
+
+.nav-item:hover,
+.nav-item:focus {
+  text-decoration: underline;
+}
+
+.shopify-navbar-users-icons {
+  display: flex;
+  align-items: center;
+}
+
+.shopify-navbar-users-icons a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Remove border, outline, and focus ring for toggler */
+.no-outline {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  font-size: 18px !important;
+  background: transparent !important;
+}
+
+.no-outline:focus,
+.no-outline:active {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+
+/*brand logo  size */
+@media (min-width: 320px) and (max-width: 992px) {
+  .brand-logo {
+    height: 25px;
+  }
+
+  .shopify-header-text {
+    font-size: 19px !important;
+    letter-spacing: 0 !important;
+  }
+}
+
+
+
+
+
+
+@media (min-width: 320px) and (max-width: 992px) {
+  #navbarEcom {
+    width: 100%;
+    background-color: #fff;
+    /* or match your nav background */
+    padding: 1rem;
+
+    position: absolute;
+    top: 100%;
+    /* right below the header */
+    left: 0;
+    z-index: 999;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (min-width: 320px) and (max-width: 992px) {
+  #navbarEcom {
+    text-align: left !important;
+  }
+
+  #navbarEcom .navbar-nav {
+    align-items: flex-start !important;
+    flex-direction: column !important;
+    width: 100%;
+  }
+
+  #navbarEcom .nav-item {
+    width: 100%;
+  }
+
+  #navbarEcom .nav-link {
+    text-align: left;
+    padding-left: 1rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 992px) {
+  .shopify-navbar-icons a {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 992px) {
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .nav-item {
+    margin: 5px 0;
+  }
+
+  .icons {
+    margin-top: 10px;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .search-box {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 992px) {
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .nav-item {
+    margin: 5px 0;
+    margin-bottom: 8px;
+    font-size: 16px !important;
+  }
+
+  .icons {
+    margin-top: 10px;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .search-box {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* Mobile search box can be full width or adjusted */
+
+@media (min-width: 320px) and (max-width: 992px) {
+  .search-box {
+    width: 150px;
+  }
+
+  .search-box input {
+    font-size: 11px;
+  }
+}

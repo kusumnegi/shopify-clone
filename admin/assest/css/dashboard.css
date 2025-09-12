@@ -1,0 +1,56 @@
+body {
+    background-color: #f5f6fa;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.flex {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sidebar {
+    background-color: #343a40;
+    color: white;
+    padding: 40px 20px;
+    /* vertical and horizontal padding */
+    width: fit-content;
+    /* adjust width based on content */
+    white-space: nowrap;
+    /* prevent line break so sidebar doesn't grow vertically */
+    z-index: 1000;
+    flex-shrink: 0;
+    /* prevents sidebar from shrinking */
+}
+
+.content {
+    flex: 1;
+    /* take remaining space */
+    padding: 30px;
+    overflow-y: auto;
+    min-width: 0;
+    /* allows content to shrink properly */
+}
+
+
+.sidebar h4 {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+
+}
+
+.sidebar a {
+    color: white;
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background-color: #495057;
+}

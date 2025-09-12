@@ -1,0 +1,43 @@
+.shopify-products-card {
+    border: none;
+    outline: none;
+    border-radius: 0;
+}
+
+.products-card-title {
+    text-transform: capitalize;
+    font-size: 18px;
+    color: #252325 !important;
+}
+
+.shopify-product-image-hover-wrapper {
+    position: relative;
+    display: block;
+    height: 280px;
+    overflow: hidden;
+}
+
+.shopify-product-image-hover-wrapper img {
+    width: 100%;
+    transition: opacity 0.5s ease;
+}
+
+.shopify-product-image-hover-wrapper img.shopify-product-hover-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.shopify-product-image-hover-wrapper:hover img.shopify-product-main-img {
+    opacity: 0;
+}
+
+.shopify-product-image-hover-wrapper:hover img.shopify-product-hover-img {
+    opacity: 1;
+}
+
+.price span {
+    color: #252529 !important;
+    font-size: 20px;
+}

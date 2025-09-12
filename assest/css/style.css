@@ -1,0 +1,358 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Assistant, sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Preloader wrapper */
+#preloader {
+  position: fixed;
+  inset: 0;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 9999;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+/* Loader container */
+.loader-cart {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Shopping cart icon (animated) */
+.cart-icon {
+  width: 60px;
+  height: 60px;
+  border: 4px solid #007bff;
+  border-radius: 50%;
+  position: relative;
+  animation: rotateCart 1.5s linear infinite;
+  margin: 0 auto;
+  /* Horizontally center */
+}
+
+/* Wheels of the cart */
+.cart-icon::before,
+.cart-icon::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  bottom: -10px;
+}
+
+.cart-icon::before {
+  background: #28a745;
+  left: 10px;
+}
+
+.cart-icon::after {
+  background: #ffc107;
+  right: 10px;
+}
+
+/* Loading text */
+.loader-cart p {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  animation: fadeText 1s ease-in-out infinite alternate;
+}
+
+@keyframes rotateCart {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeText {
+  from {
+    opacity: 0.5;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+/* Shopify Hero section Styling */
+/* Fullscreen hero container */
+.shopify-hero-section {
+  position: relative;
+  height: 80vh;
+  z-index: 1;
+}
+
+/* Fixed background halves */
+.shopify-fixed-img {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 50%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: -2;
+}
+
+
+/* Left and right alignment */
+.shopify-left-img {
+  left: 0;
+}
+
+.shopify-right-img {
+  left: 50%;
+  /* Keep side-by-side even on mobile */
+}
+
+/* Black overlay over both images */
+.shopify-image-black-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+
+/* Overlay content */
+
+
+.shopify-overlay-hero-content {
+  position: absolute;
+  z-index: 10;
+  color: white;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  padding: 0 20px;
+
+}
+
+.shopify-overlay-hero-content p {
+  font-weight: bold;
+  color: white;
+  font-size: 55px;
+}
+
+.shopify-overlay-hero-content span {
+  padding: 10px;
+  font-size: 32px;
+  color: #ffffffbf;
+  color: white;
+}
+
+.shopify-overlay-hero-content-btn {
+  padding: 20px 30px;
+  font-size: 16px;
+  background-color: #007bff;
+  border: 2px solid white !important;
+  color: white !important;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.shopify-hero-wrapper,
+.shopify-more-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Add white space after hero to stop fixed image from leaking into footer */
+.shopify-hero-spacer {
+  height: 100vh;
+  /* Match hero height */
+  background-color: white;
+  position: relative;
+  z-index: 1;
+}
+
+/* Other content scrolls over fixed background */
+.shopify-more-content {
+  position: relative;
+  z-index: 1;
+  background-color: white !important;
+}
+
+/* ---------- shopify  isolate section  ---------- */
+
+.shopify-isolate-container p {
+  font-size: 2.6rem;
+  font-family: Assistant, sans-serif;
+  text-align: center;
+  color: #121212;
+}
+
+.shopify-isolate-container span {
+  font-weight: 150;
+  font-size: 26px;
+  font-family: Assistant, sans-serif;
+  text-align: center;
+  color: #121212bf;
+}
+
+/* ----------  shopify products section  ---------- */
+
+
+.shopify-products-card {
+  border: none !important;
+  outline: none !important;
+  border-radius: 0px !important;
+
+}
+
+.shopify-products-card-top-img {
+  border-radius: 0px !important;
+}
+
+.products-card-title {
+  text-transform: capitalize;
+  font-size: 18px;
+
+  color: #252325 !important;
+}
+
+.shopify-product-image-hover-wrapper {
+  position: relative;
+  display: block;
+  height: 280px;
+  overflow: hidden;
+
+}
+
+.shopify-product-image-hover-wrapper img.shopify-product-main-img {
+  display: block;
+  width: 100%;
+  transition: opacity 0.5s ease;
+}
+
+.shopify-product-image-hover-wrapper img.shopify-product-hover-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.shopify-product-image-hover-wrapper:hover img.shopify-product-main-img {
+  opacity: 0;
+}
+
+.shopify-product-image-hover-wrapper:hover img.shopify-product-hover-img {
+  opacity: 1;
+}
+
+.price span {
+  color: #252529 !important;
+  font-size: 20px;
+}
+
+.shopify-product-out-of-stock {
+  color: #ad0505 !important;
+  font-size: 16px;
+  margin-bottom: 5px !important;
+  font-weight: bold;
+}
+
+/*back in stock section */
+
+.back-in-stock-containe-row {
+  text-decoration: none;
+  color: #212529;
+}
+
+.shopify-back-stock-zoom-hover {
+  overflow: hidden;
+}
+
+.shopify-back-stock-zoom-hover img {
+  transition: transform 0.3s ease;
+}
+
+.shopify-back-stock-zoom-hover:hover img {
+  transform: scale(1.1);
+  /* Slight zoom */
+}
+
+
+/* shopify products-video section */
+
+.products-video {
+  background-color: white;
+}
+
+.shopify-product-video-container {
+  position: relative;
+  width: 100%;
+
+  padding-top: 56.25%;
+  /* 16:9 Aspect Ratio */
+  overflow: hidden;
+  background: #000;
+}
+
+.shopify-product-video-container iframe,
+.shopify-product-video-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  object-fit: cover;
+}
+
+.shopify-product-video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.shopify-product-video-play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  font-size: 68px;
+  color: white;
+  background-size: contain;
+  z-index: 3;
+  pointer-events: none;
+}

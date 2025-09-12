@@ -1,0 +1,55 @@
+form {
+  background: white;
+  padding: 20px;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+input,
+button {
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.flex-display {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.video-box,
+.thumb-box {
+  flex: 1 1 45%;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+  border-radius: 6px;
+}
+
+img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.delete-btn {
+  margin-top: 10px;
+  background: #dc3545;
+  color: white;
+  text-align: center;
+  padding: 8px;
+  display: block;
+  border-radius: 4px;
+  text-decoration: none;
+}

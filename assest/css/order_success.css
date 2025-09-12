@@ -1,0 +1,38 @@
+.order-success-container {
+  max-width: 800px;
+  margin-top: 130px !important;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+}
+
+.product-img {
+  max-width: 120px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.order-details p {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 576px) {
+  .d-flex.flex-row {
+    flex-direction: column !important;
+    align-items: center;
+    text-align: center;
+  }
+
+  .product-img {
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 992px) {
+  .order-success-container {
+    margin-top: 60px !important;
+  }
+}

@@ -1,0 +1,69 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f7f7f7;
+}
+
+.order-item {
+  background: #fff;
+  border-radius: 8px;
+  margin-bottom: 18px;
+  padding: 18px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.product-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.product-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.pri-odr-sts {
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+.order-status {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .3px;
+}
+
+.status-pending {
+  color: #d9a500;
+}
+
+.status-shipping {
+  color: #0d6efd;
+}
+
+.status-out-for-delivery {
+  color: #198754;
+}
+
+.status-delivered {
+  color: #6c757d;
+}
+
+.status-cancelled {
+  color: #c82333;
+}
+
+.filter-container {
+  margin-bottom: 18px;
+}
+
+@media (max-width:768px) {
+  .product-title {
+    font-size: 1rem;
+  }
+
+  .pri-odr-sts {
+    font-size: 13px;
+  }
+}

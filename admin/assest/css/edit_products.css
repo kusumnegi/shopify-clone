@@ -1,0 +1,61 @@
+.content {
+    flex: 1;
+    padding: 30px;
+}
+
+h2 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+form {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+label.form-label {
+    font-weight: 500;
+}
+
+input.form-control,
+select.form-select,
+textarea.form-control {
+    border-radius: 8px;
+}
+
+.btn-success,
+.btn-secondary {
+    border-radius: 8px;
+    padding: 8px 18px;
+    font-weight: 500;
+}
+
+img.preview {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+#size-options button {
+    transition: 0.3s;
+    margin: 3px;
+}
+
+#size-options button:hover {
+    transform: scale(1.05);
+}
+
+.modal-content {
+    border-radius: 12px;
+}
+
+.modal-header h1 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}

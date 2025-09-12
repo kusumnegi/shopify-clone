@@ -1,0 +1,26 @@
+table img {
+  max-height: 50px;
+  border: 1px solid #ccc;
+  padding: 2px;
+  border-radius: 4px;
+}
+
+table td,
+table th {
+  vertical-align: middle !important;
+}
+
+td.truncate {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+
+  table th,
+  table td {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,106 @@
+/* ---------- shopify footer section  ---------- */
+
+.shopify-footer-section {
+  background-color: white !important;
+  font-family: assistant, sans-serif;
+}
+
+.shopify-footer-links {
+  text-decoration: none;
+  color: #121212bf !important;
+  font-size: 22px;
+  line-height: 2.1;
+}
+
+.shopify-footer-links:hover {
+  text-decoration: underline #000;
+
+}
+
+.shopify-footer-template-section img {
+  height: 30px;
+}
+
+.shopshy-footer-templates-img {
+  height: 50px !important;
+  margin-bottom: 32px;
+}
+
+.shopify-footer-template-text {
+  color: #121212bf;
+  font-size: 29px !important;
+  font-family: assistant, sans-serif;
+}
+
+.shopify-footer-info-column {
+  margin-top: 20px;
+}
+
+.shopify-footer-mission {
+  color: #121212bf !important;
+  font-size: 30px;
+  line-height: 2.1;
+}
+
+.shopify-footer-info-email {
+  width: 100%;
+  display: flex;
+  justify-content: center !important;
+  border: 3px solid #000;
+}
+
+.shopify-footer-info-email input,
+button {
+  border: 1px solid white !important;
+}
+
+.shopify-footer-info-email input:focus {
+  border: none !important;
+  outline: none !important;
+}
+
+.shopify-footer-socail-links-container {
+  display: flex;
+  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+}
+
+.shopify-footer-socail-links {
+  text-decoration: none;
+  color: #000 !important;
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.shopify-footer-socail-links:hover {
+  font-size: 40px;
+}
+
+.copyright {
+  font-size: 17px;
+}
+
+/*footer section query*/
+@media (min-width: 320px) and (max-width: 768px) {
+  .shopshy-footer-templates-img {
+    margin-bottom: 15px !important;
+  }
+
+  .shopify-footer-template-text {
+    font-size: 16px !important;
+  }
+
+  .shopify-footer-links {
+    font-size: 15px !important;
+  }
+
+  .shopify-footer-mission {
+    font-size: 18px;
+  }
+
+  .shopify-footer-socail-links {
+    font-size: 28px;
+  }
+}

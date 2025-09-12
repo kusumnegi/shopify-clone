@@ -1,0 +1,82 @@
+/*//hero section img */
+/* Mobile view: NO stacking */
+@media (max-width: 768px) {
+  .shopify-fixed-img {
+    width: 50%;
+    height: 100vh;
+  }
+
+  .shopify-left-img {
+    left: 0;
+  }
+
+  .shopify-right-img {
+    left: 50%;
+  }
+}
+
+/* shopify isolate container section */
+@media (min-width: 320px) and (max-width: 992px) {
+  .shopify-isolate-container p {
+    margin-top: 10px;
+    font-size: 31px;
+  }
+
+  .shopify-isolate-container span {
+    font-size: 20px !important;
+  }
+
+
+
+  .shopify-overlay-hero-content {
+    margin-top: 55px;
+  }
+
+  .shopify-overlay-hero-content p {
+    font-size: 26px;
+    margin-bottom: 10px !important;
+  }
+
+  .shopify-overlay-hero-content span {
+    font-size: 17px;
+
+  }
+
+  .shopify-overlay-hero-content-btn {
+    padding: 5px 7px !important;
+    font-size: 18px !important;
+    margin-top: 20px !important;
+  }
+
+}
+
+
+
+/*//product section */
+@media (min-width: 320px) and (max-width: 768px) {
+  .products-card-title {
+    font-size: 12px;
+    margin: 0 !important;
+  }
+
+  .price {
+    line-height: 15px;
+    margin-top: 10px;
+  }
+
+  .price span {
+    font-size: 11px;
+  }
+
+  .price-cdn {
+    font-size: 12px !important;
+  }
+
+  .shopify-product-image-hover-wrapper {
+    height: 148px;
+  }
+
+  .out_of_stock {
+    font-size: 13px !important;
+  }
+}
