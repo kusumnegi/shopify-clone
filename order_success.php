@@ -38,9 +38,9 @@ $totalPrice = $price * $quantity;
 </head>
 
 <body>
-  <div class="pt-5">
+  <div class="">
     <div class="order-success-container">
-      <h2 class="text-center text-success mt-5 mb-3">🎉 Order Placed Successfully!</h2>
+      <h2 class="text-center text-success mb-3">🎉 Order Placed Successfully!</h2>
       <p class="text-center text-muted mb-4">Thank you for shopping with us!</p>
       <hr>
 
