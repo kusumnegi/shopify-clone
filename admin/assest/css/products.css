@@ -1,0 +1,140 @@
+/* General Layout */
+.content {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+/* Form Styling */
+form#product-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+form#product-form .form-label {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+form#product-form .form-control,
+form#product-form .form-select,
+form#product-form textarea {
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    transition: all 0.2s ease-in-out;
+}
+
+form#product-form .form-control:focus,
+form#product-form .form-select:focus,
+form#product-form textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+
+#add-gallery-btn {
+    cursor: pointer;
+}
+
+/* Sizes Options */
+#size-options {
+    gap: 8px;
+}
+
+.size-option {
+    display: inline-block;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 3px;
+    transition: all 0.2s ease;
+}
+
+.size-option.selected {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+/* Buttons */
+button.btn {
+    border-radius: 6px;
+}
+
+button.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+button.btn-primary:hover {
+    background-color: #0069d9;
+}
+
+/* Table Styling */
+table.table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+table.table th,
+table.table td {
+    padding: 12px 15px;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 1px solid #eaeaea;
+}
+
+table.table th {
+    background-color: #f3f3f3;
+    font-weight: 600;
+}
+
+table.table tbody tr:hover {
+    background-color: #f1faff;
+}
+
+/* Image Previews */
+.preview {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin: 2px;
+    border: 1px solid #ccc;
+}
+
+/* Stock Labels */
+.out-of-stock {
+    color: #dc3545;
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    form#product-form .col-md-6,
+    form#product-form .col-md-3,
+    form#product-form .col-md-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    table.table th,
+    table.table td {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    .preview {
+        width: 50px;
+        height: 50px;
+    }
+}

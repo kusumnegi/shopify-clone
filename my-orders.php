@@ -143,8 +143,8 @@ function payment_display($method)
         </div>
     </div>
 
-    <script src="assest/js/my_orders.js"></script>
     <?php include 'footer.php'; ?>
+    <script src="assest/js/my-orders.js"></script>
 </body>
 
 </html>

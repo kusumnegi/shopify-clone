@@ -39,40 +39,42 @@ $totalPrice = $price * $quantity;
 
 <body>
   <div class="">
-    <div class="order-success-container">
-      <h2 class="text-center text-success mb-3">🎉 Order Placed Successfully!</h2>
-      <p class="text-center text-muted mb-4">Thank you for shopping with us!</p>
-      <hr>
+    <div>
+      <div class="order-success-container">
+        <h2 class="text-center text-success mb-3">🎉 Order Placed Successfully!</h2>
+        <p class="text-center text-muted mb-4">Thank you for shopping with us!</p>
+        <hr>
 
-      <!-- Product + Order Info -->
-      <div class="d-flex flex-row align-items-start gap-3 mb-4">
-        <img src="admin/uploads/products/<?= htmlspecialchars($order['product_image'] ?? 'no-image.png') ?>"
-          class="product-img" alt="Product Image">
-        <div>
-          <h5><?= htmlspecialchars($order['product_title'] ?? 'N/A') ?></h5>
-          <p><strong>Order ID:</strong> <?= $order['id'] ?></p>
-          <p><strong>Size:</strong> <?= htmlspecialchars($order['size'] ?? 'N/A') ?></p>
-          <p><strong>Quantity:</strong> <?= $quantity ?> Piece<?= ($quantity > 1 ? 's' : '') ?></p>
-          <p><strong>Price (per piece):</strong> ₹<?= number_format($price, 2) ?></p>
-          <p><strong>Total Price:</strong> ₹<?= number_format($totalPrice, 2) ?></p>
-          <p><strong>Payment:</strong> <?= ucfirst($order['payment_method'] ?? 'N/A') ?></p>
+        <!-- Product + Order Info -->
+        <div class="d-flex flex-row align-items-start gap-3 mb-4">
+          <img src="admin/uploads/products/<?= htmlspecialchars($order['product_image'] ?? 'no-image.png') ?>"
+            class="product-img" alt="Product Image">
+          <div>
+            <h5><?= htmlspecialchars($order['product_title'] ?? 'N/A') ?></h5>
+            <p><strong>Order ID:</strong> <?= $order['id'] ?></p>
+            <p><strong>Size:</strong> <?= htmlspecialchars($order['size'] ?? 'N/A') ?></p>
+            <p><strong>Quantity:</strong> <?= $quantity ?> Piece<?= ($quantity > 1 ? 's' : '') ?></p>
+            <p><strong>Price (per piece):</strong> ₹<?= number_format($price, 2) ?></p>
+            <p><strong>Total Price:</strong> ₹<?= number_format($totalPrice, 2) ?></p>
+            <p><strong>Payment:</strong> <?= ucfirst($order['payment_method'] ?? 'N/A') ?></p>
+          </div>
         </div>
-      </div>
 
-      <!-- Delivery Info -->
-      <div class="order-details">
-        <p><strong>Delivery To:</strong> <?= htmlspecialchars($order['name']) ?></p>
-        <p><strong>Phone:</strong> <?= htmlspecialchars($order['phone']) ?></p>
-        <p><strong>Email:</strong> <?= htmlspecialchars($order['email']) ?></p>
-        <p><strong>Address:</strong><br>
-          <?= htmlspecialchars($order['address']) ?>, <?= htmlspecialchars($order['city']) ?>,
-          <?= htmlspecialchars($order['state']) ?>, <?= htmlspecialchars($order['country']) ?>
-        </p>
-        <p><strong>Order Date:</strong> <?= date('d M Y, h:i A', strtotime($order['order_date'] ?? 'now')) ?></p>
-      </div>
+        <!-- Delivery Info -->
+        <div class="order-details">
+          <p><strong>Delivery To:</strong> <?= htmlspecialchars($order['name']) ?></p>
+          <p><strong>Phone:</strong> <?= htmlspecialchars($order['phone']) ?></p>
+          <p><strong>Email:</strong> <?= htmlspecialchars($order['email']) ?></p>
+          <p><strong>Address:</strong><br>
+            <?= htmlspecialchars($order['address']) ?>, <?= htmlspecialchars($order['city']) ?>,
+            <?= htmlspecialchars($order['state']) ?>, <?= htmlspecialchars($order['country']) ?>
+          </p>
+          <p><strong>Order Date:</strong> <?= date('d M Y, h:i A', strtotime($order['order_date'] ?? 'now')) ?></p>
+        </div>
 
-      <div class="text-center mt-4">
-        <a href="index.php" class="btn btn-success">Continue Shopping</a>
+        <div class="text-center mt-4">
+          <a href="index.php" class="btn btn-success">Continue Shopping</a>
+        </div>
       </div>
     </div>
   </div>

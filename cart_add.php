@@ -55,4 +55,3 @@ if ($existing) {
 
 echo json_encode(['status' => 'success', 'message' => 'Product added to cart successfully!']);
 exit;
-?>

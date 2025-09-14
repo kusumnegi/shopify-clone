@@ -81,7 +81,7 @@
           </form>
         </div>
 
-        <div class="col-md-6 shopify-footer-socail-links-container d-flex flex-end  ">
+        <div class="col-md-6 mb-5 mb-lg-0 shopify-footer-socail-links-container d-flex flex-end ">
           <?php if (!empty($footerData['social'])): ?>
             <?php foreach ($footerData['social'] as $social): ?>
               <a href="<?= htmlspecialchars($social['link']) ?>" class="shopify-footer-socail-links p-lg-3 p-2 mt-2 m-lg-0 mx-2" target="_blank">
@@ -93,11 +93,10 @@
       </div>
     </center>
   </div>
-  <center class="copyright mb-2 mt-lg-5 mt-3 px-3">© 2025, theme-dawn-demo Powered by Shopify</center>
+  <center class="copyright mb-5 pb-4 mb-lg-0 pb-lg-5 mt-lg-5 mt-3 px-3">© 2025, theme-dawn-demo Powered by Shopify</center>
 
   <!-- ------------ footer socail section ended here....!  ------------ -->
 </footer>
-
 <!-- Bootstrap JS (optional if already loaded in nav.php) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

@@ -181,7 +181,7 @@ $conn->close();
                     <button type="button" class="btn btn-secondary mt-3" id="add-link-btn">+ Add New Link</button>
                 </div>
 
-                <button type="submit" class="btn hero-upload-btn">Save Changes</button>
+                <button type="submit" class="btn btn-outline-success hero-upload-btn">Save Changes</button>
             </form>
         </div>
     </div>

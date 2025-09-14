@@ -74,6 +74,7 @@ $result = $conn->query("SELECT * FROM products ORDER BY id DESC");
     <title>Manage Products</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assest/css/dashboard.css">
+    <link rel="stylesheet" href="assest/css/products.css">
 </head>
 
 <body>
@@ -156,7 +157,7 @@ $result = $conn->query("SELECT * FROM products ORDER BY id DESC");
                 <thead>
                     <tr>
                         <th>#</th>
-                        <th>Images</th>
+                        <th>Image</th>
                         <th>Title</th>
                         <th>Stock</th>
                         <th>Type</th>
@@ -177,13 +178,6 @@ $result = $conn->query("SELECT * FROM products ORDER BY id DESC");
                             <td><?= $i++ ?></td>
                             <td>
                                 <img src="uploads/products/<?= htmlspecialchars($row['image']) ?>" class="preview">
-                                <img src="uploads/products/<?= htmlspecialchars($row['hover_image']) ?>" class="preview">
-                                <?php
-                                $gallery = $conn->query("SELECT image FROM product_images WHERE product_id = " . $row['id']);
-                                while ($img = $gallery->fetch_assoc()):
-                                ?>
-                                    <img src="uploads/products/<?= htmlspecialchars($img['image']) ?>" class="preview mt-1">
-                                <?php endwhile; ?>
                             </td>
                             <td><?= htmlspecialchars(mb_strimwidth($row['title'], 0, 30, '...')) ?></td>
                             <td>
@@ -204,6 +198,7 @@ $result = $conn->query("SELECT * FROM products ORDER BY id DESC");
                     <?php endwhile; ?>
                 </tbody>
             </table>
+
         </div>
     </div>
 

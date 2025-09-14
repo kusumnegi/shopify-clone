@@ -201,16 +201,11 @@ if ($isLoggedIn) {
             <p style="text-align: center; color: red;">No video found in the database.</p>
           <?php endif; ?>
         </div>
+      </div>
     </main>
-
-
     <?php include 'footer.php'; ?>
-    <!-- ------------ footer section ended here....!  ------------ -->
   </section>
   <!-- ---------- Shopify main section ended ---------- -->
-
-
-
 
   <script type="text/javascript" src="assest/js/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>

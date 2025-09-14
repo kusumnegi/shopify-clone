@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 11, 2025 at 07:52 PM
+-- Generation Time: Sep 14, 2025 at 07:35 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -62,7 +62,9 @@ CREATE TABLE `cart` (
 --
 
 INSERT INTO `cart` (`id`, `user_id`, `product_id`, `size`, `quantity`, `added_at`) VALUES
-(3, 1, 7, 'S', 1, '2025-09-11 17:20:45');
+(4, 1, 9, 'S', 1, '2025-09-13 16:32:28'),
+(5, 1, 15, '', 2, '2025-09-13 16:32:43'),
+(6, 1, 16, 'M', 1, '2025-09-13 16:32:50');
 
 -- --------------------------------------------------------
 
@@ -187,6 +189,20 @@ CREATE TABLE `orders` (
   `quantity` int(11) NOT NULL DEFAULT 1,
   `product_title` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `orders`
+--
+
+INSERT INTO `orders` (`id`, `user_id`, `product_id`, `name`, `email`, `phone`, `address`, `city`, `state`, `country`, `payment_method`, `price`, `product_image`, `order_date`, `status`, `size`, `quantity`, `product_title`) VALUES
+(46, 1, 7, 'tannu', 'heyimtannu@gmail.com', '8825656155', 'S-99/148 Moti Lal Nehru Camp JNU', 'New Delhi', 'Delhi', 'India', 'cod', 864.00, 'SKIRT1.webp', '2025-09-13 22:06:16', NULL, 'S', 2, 'Women Washed A-line Green Skirt'),
+(47, 1, 7, 'tannu', 'heyimtannu@gmail.com', '0000000000', 'S-99/148 Moti Lal Nehru Camp JNU', 'New Delhi', 'Delhi', 'India', 'cod', 864.00, 'SKIRT1.webp', '2025-09-13 22:22:57', 'Shipping', 'S', 2, 'Women Washed A-line Green Skirt'),
+(48, 1, 16, 'tannu', 'heyimtannu@gmail.com', '0000000000', 'S-99/148 Moti Lal Nehru Camp JNU', 'New Delhi', 'Delhi', 'India', 'upi', NULL, 'su1.webp', '2025-09-13 22:24:13', 'Cancelled', 'M', 1, 'Men 3 piece suit for men Solid Suit'),
+(49, 1, 8, 'tannu', 'heyimtannu@gmail.com', '0000000000', 'S-99/148 Moti Lal Nehru Camp JNU', 'New Delhi', 'Delhi', 'India', 'netbanking', 945.00, 'shoe.webp', '2025-09-13 22:24:25', 'Out for Delivery', '5', 1, 'Casuals Shoes For Women,men'),
+(50, 1, 15, 'tannu', 'heyimtannu@gmail.com', '0000000000', 'S-99/148 Moti Lal Nehru Camp JNU', 'New Delhi', 'Delhi', 'India', 'cod', 28.25, 'sa1.webp', '2025-09-13 22:24:35', 'Cancelled', '', 1, 'Solid/Plain Bollywood Silk Blend Saree  (Brown)'),
+(51, 1, 7, 'tannu', 'heyimtannu@gmail.com', '0000000000', 'S-99/148 Moti Lal Nehru Camp JNU', 'New Delhi', 'Delhi', 'India', 'cod', 864.00, 'SKIRT1.webp', '2025-09-14 19:57:45', 'Out for Delivery', 'S', 3, 'Women Washed A-line Green Skirt'),
+(52, 1, 7, 'tannu', 'heyimtannu@gmail.com', '0000000000', 'S-99/148 Moti Lal Nehru Camp JNU', 'New Delhi', 'Delhi', 'India', 'cod', 864.00, 'SKIRT1.webp', '2025-09-14 21:23:33', 'Cancelled', 'S', 4, 'Women Washed A-line Green Skirt'),
+(53, 1, 15, 'tannu', 'heyimtannu@gmail.com', '0000000000', 'S-99/148 Moti Lal Nehru Camp JNU', 'New Delhi', 'Delhi', 'India', 'cod', 28.25, 'sa1.webp', '2025-09-14 21:31:54', 'Cancelled', '', 2, 'Solid/Plain Bollywood Silk Blend Saree  (Brown)');
 
 -- --------------------------------------------------------
 
@@ -314,7 +330,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `name`, `email`, `password`, `created_at`, `phone`, `address`, `city`, `state`, `country`) VALUES
-(1, 'tannu', 'heyimtannu@gmail.com', '$2y$10$YhfFQTnitXPIxn2ALoroJeOJeVpEbZMLj9T/WE7JzJgqTlk3WvHt2', '2025-09-08 17:47:25', NULL, NULL, NULL, NULL, NULL);
+(1, 'tannu', 'heyimtannu@gmail.com', '$2y$10$YhfFQTnitXPIxn2ALoroJeOJeVpEbZMLj9T/WE7JzJgqTlk3WvHt2', '2025-09-08 17:47:25', '0000000000', 'S-99/148 Moti Lal Nehru Camp JNU', 'New Delhi', 'Delhi', 'India');
 
 --
 -- Indexes for dumped tables
@@ -406,7 +422,7 @@ ALTER TABLE `back_in_stock`
 -- AUTO_INCREMENT for table `cart`
 --
 ALTER TABLE `cart`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `footer`
@@ -430,7 +446,7 @@ ALTER TABLE `members`
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
 
 --
 -- AUTO_INCREMENT for table `products`
