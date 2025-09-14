@@ -2,13 +2,7 @@
 
 Full-stack Shopify clone using HTML, CSS, JavaScript, PHP, MySQL & Bootstrap. Fully dynamic website with admin panel for product & category management, interactive UI, responsive design, and smooth user experience. Portfolio-ready real-world e-commerce project.
 
----
-
-## Demo Video
-Click below to watch the demo video:
-[![Watch Demo](screenshots/hero.png)](screenshots/shopify-demo.mp4)
----
-
+___
 ## Screenshots
 
 ### 1. Hero Section
