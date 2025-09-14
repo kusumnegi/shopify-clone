@@ -6,15 +6,13 @@ Full-stack Shopify clone using HTML, CSS, JavaScript, PHP, MySQL & Bootstrap. Fu
 
 ## Demo Video
 Click below to watch the demo video:
-
-[![Watch Demo](screenshots/shopify-demo.mp4)](screenshots/shopify-demo.mp4)
-
+[![Watch Demo](screenshots/hero.png)](screenshots/shopify-demo.mp4)
 ---
 
 ## Screenshots
 
 ### 1. Hero Section
-![Hero](screenshots/hero.png)
+![Hero](screenshots/home.png)
 
 ### 2. Product Details
 ![Product Details](screenshots/product-details.png)
